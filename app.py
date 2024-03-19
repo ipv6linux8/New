@@ -1,9 +1,8 @@
-
 # Import necessary libraries
 import streamlit as st
 import pandas as pd
 import numpy as np
-
+import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Title of our app
@@ -18,7 +17,7 @@ data = {
 df = pd.DataFrame(data)
 
 # Displaying a table with Streamlit
-st.header("Displaying Tables in Jasper")
+st.header("Displaying Tables in Streamlit")
 st.table(df.head(25))
 
 # Displaying a DataFrame with Streamlit (more interactive than table)
@@ -30,7 +29,8 @@ st.header("Using Built-in Line Chart")
 st.bar_chart(df)
 
 
-
+# Using Matplotlib and Seaborn for custom visualizations
+st.header("Custom Visualizations with Matplotlib and Seaborn")
 
 # Creating a correlation heatmap using seaborn
 plt.figure(figsize=(8,6))

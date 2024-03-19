@@ -3,7 +3,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+
 import seaborn as sns
 
 # Title of our app
@@ -30,8 +30,7 @@ st.header("Using Built-in Line Chart")
 st.bar_chart(df)
 
 
-# Using Matplotlib and Seaborn for custom visualizations
-st.header("Custom Visualizations with Matplotlib and Seaborn")
+
 
 # Creating a correlation heatmap using seaborn
 plt.figure(figsize=(8,6))

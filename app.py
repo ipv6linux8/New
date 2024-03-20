@@ -1,14 +1,14 @@
-# Import necessary libraries
+# Importing necessary libraries
 import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Title of our app
+# Title
 st.title("Data Display with Streamlit")
 
-# Creating a sample DataFrame
+# Creating a DataFrame
 data = {
     "A": np.random.randn(50),
     "B": np.random.randn(50),
@@ -20,7 +20,7 @@ df = pd.DataFrame(data)
 st.header("Displaying Tables in Streamlit")
 st.table(df.head(25))
 
-# Displaying a DataFrame with Streamlit (more interactive than table)
+# Displaying a DataFrame with Streamlit (more interactive and better than a table)
 st.header("Displaying DataFrames in Streamlit")
 st.write(df.head(25))
 
